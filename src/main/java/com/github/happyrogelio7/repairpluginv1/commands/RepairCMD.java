@@ -44,7 +44,7 @@ public class RepairCMD implements CommandExecutor {
                 return true;
             }
 
-            if (args.length > 1){
+            if (args.length > 0){
 
                 if (args[0].equalsIgnoreCase("help")){
 
@@ -75,7 +75,7 @@ public class RepairCMD implements CommandExecutor {
 
                 } else if (args[0].equalsIgnoreCase("all")){
 
-                    if (p.hasPermission("repairpluginv1.fix.all")){
+                    if (!p.hasPermission("repairpluginv1.fix.all")){
                         p.sendMessage(MessagesUtils.getMsgColor("&cNo Permission."));
                         return true;
                     }
@@ -93,7 +93,7 @@ public class RepairCMD implements CommandExecutor {
                     return true;
                 } else if (args[0].equalsIgnoreCase("hand")){
 
-                    if (p.hasPermission("repairpluginv1.fix.hand")){
+                    if (!p.hasPermission("repairpluginv1.fix.hand")){
                         p.sendMessage(MessagesUtils.getMsgColor("&cNo Permission."));
                         return true;
                     }
