@@ -1,0 +1,14 @@
+name: RepairPluginV1
+version: '${project.version}'
+main: com.github.happyrogelio7.repairpluginv1.RepairPluginV1
+authors: [ HappyRogelio7 ]
+description: RepairPluginV1
+website: https://github.com/HappyRogelio7
+commands:
+  repair:
+    aliases:
+      - reparar
+      - repairplugin
+      - repairpluginv1
+      - fix
+    usage: /<command> help
